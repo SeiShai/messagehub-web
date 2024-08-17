@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(69deg, #213A61 23%, #2995A3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 300px;
+    height: 150px;
+}
+
+.username-input {
+    width: 512px;
+    height: 86px;
+    position: absolute;
+    left: 224px;
+    top: 448px;
+    background: #91ACD2;
+    border-radius: 22px;
+    padding-left: 20px;
+    font-size: 31px;
+    color: black;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    line-height: 54.25px;
+    border: none;
+    outline: none;
+}
+
+.username-input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.topic-input {
+    width: 535px;
+    height: 224px;
+    position: absolute;
+    left: 224px;
+    top: 560px;
+    background: #91ACD2;
+    border-radius: 22px;
+    padding: 20px;
+    font-size: 31px;
+    color: black;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    line-height: 54.25px;
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.topic-input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    left: 300px;
+    top: 49px;
+    position: absolute;
+    background: #2995A3;
+    border-radius: 204px;
+}
+
+.inner-circle {
+    width: 336px;
+    height: 336px;
+    left: 307px;
+    top: 56px;
+    position: absolute;
+    background: #91ACD2;
+    border-radius: 168px;
+}
+
+.find-hubmate {
+    background-color: #2995A3;
+    width: 80%;
+    position: absolute;
+    left: -790px;
+    top: 400px;
+    max-width: 535px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Jomolhari', serif;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.find-hubmate:hover {
+    background: #0688fa;
+    transform: scale(1.05);
+}
+
+.find-hubmate::before {
+    content: "";
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.6) 25%, transparent 50%, rgba(255, 255, 255, 0.6) 75%);
+    transform: rotate(-30deg);
+    transition: all 1s ease;
+    z-index: 1;
+}
+
+.find-hubmate:hover::before {
+    top: 0%;
+    left: 0%;
+}
+
+.find-hubmate span {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-us {
+    width: 593px;
+    height: 180px;
+    left: 1884px;
+    top: 814px;
+    position: absolute;
+}
+
+.contact-icons {
+    width: 389px;
+    height: 111px;
+    left: 204px;
+    top: 69px;
+    position: absolute;
+}
+
+.contact-icon {
+    width: 111px;
+    height: 111px;
+    position: absolute;
+    background: #91ACD2;
+    border-radius: 168px;
+}
+
+.contact-us-text {
+    width: 580px;
+    height: 138px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 36px;
+    font-family: 'Jomolhari', serif;
+    font-weight: 400;
+    line-height: 42.18px;
+    word-wrap: break-word;
+}
+
+.messagehub-container {
+    width: 974px;
+    height: 857px;
+    left: 1496px;
+    top: 56px;
+    position: absolute;
+}
+
+.messagehub-title {
+    width: 968px;
+    height: 504px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 120px;
+    font-family: 'Jomolhari', serif;
+    font-weight: 400;
+    line-height: 140.59px;
+    word-wrap: break-word;
+}
+
+.messagehub-subtitle {
+    color: white;
+    font-size: 33px;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    line-height: 29.21px;
+    word-wrap: break-word;
+}
+
+.messagehub-description {
+    width: 794px;
+    height: 392px;
+    left: 180px;
+    top: 465px;
+    position: absolute;
+    text-align: justify;
+    color: white;
+    font-size: 31px;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    line-height: 54.25px;
+    word-wrap: break-word;
+}
